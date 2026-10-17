@@ -1,0 +1,9 @@
+scikit-learn==1.9.1
+lightgbm==4.7.0
+# déjà requis par data/meteo_astro.py et ml/features.py (calcul du soleil)
+requests==2.34.2
+astral==3.2
+fastapi==0.141.1
+uvicorn==0.52.4
+# tests de l API uniquement
+httpx==0.28.1

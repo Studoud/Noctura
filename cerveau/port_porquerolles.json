@@ -1,0 +1,42 @@
+{
+  "port": "Porquerolles",
+  "latitude": 43.0003,
+  "longitude": 6.2006,
+  "zones": {
+    "A": {
+      "nom": "Port et débarcadère",
+      "groupe_dataset": "G1",
+      "zones_dataset": [
+        "capitainerie",
+        "entree_du_port",
+        "pontons_centraux",
+        "quai_est",
+        "quai_nord",
+        "quai_ouest"
+      ],
+      "alias": ["port", "debarcadere", "port et debarcadere", "g1"]
+    },
+    "B": {
+      "nom": "Village et commerces",
+      "groupe_dataset": "G2",
+      "zones_dataset": ["acces_village", "quai_sud_commerces"],
+      "alias": ["village", "commerces", "village et commerces", "g2"]
+    }
+  },
+  "zones_critiques": {
+    "quai_sud_commerces": {
+      "plancher_nuit": 50,
+      "motif": "zone critique de Porquerolles : baisse limitée à 50 % maximum la nuit"
+    }
+  },
+  "alias_zones_dataset": {
+    "capitainerie": ["capitainerie", "bureau du port"],
+    "entree_du_port": ["entree du port", "entree port", "passe"],
+    "pontons_centraux": ["pontons", "pontons centraux"],
+    "quai_est": ["quai est"],
+    "quai_nord": ["quai nord"],
+    "quai_ouest": ["quai ouest"],
+    "acces_village": ["acces village", "place d'armes"],
+    "quai_sud_commerces": ["quai sud", "quai sud commerces"]
+  }
+}

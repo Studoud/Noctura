@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# Données simulées : régénérables avec python -m ml.simulation
+data/dataset_simule.csv

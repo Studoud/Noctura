@@ -1,0 +1,96 @@
+{
+  "niveau_global": "alerte",
+  "especes_en_alerte": [
+    "Oblade (Oblada melanurus)",
+    "Sar à museau pointu (Diplodus puntazzo)"
+  ],
+  "especes_en_vigilance": [],
+  "especes": {
+    "Crénilabre (Symphodus tinca)": {
+      "n_annees": 4,
+      "effectif_total": 9.0,
+      "niveau": "inconnu",
+      "motif": "effectif total < 20 individus"
+    },
+    "Crénilabre ocellé (Symphodus ocellatus)": {
+      "n_annees": 4,
+      "effectif_total": 1.0,
+      "niveau": "inconnu",
+      "motif": "effectif total < 20 individus"
+    },
+    "Crénilabre à cinq taches (Symphodus roissali)": {
+      "n_annees": 4,
+      "effectif_total": 3.0,
+      "niveau": "inconnu",
+      "motif": "effectif total < 20 individus"
+    },
+    "Mérou brun (Epinephelus marginatus)": {
+      "n_annees": 4,
+      "effectif_total": 1.0,
+      "niveau": "inconnu",
+      "motif": "effectif total < 20 individus"
+    },
+    "Oblade (Oblada melanurus)": {
+      "n_annees": 4,
+      "annees": [
+        2022,
+        2025
+      ],
+      "effectif_total": 25.0,
+      "variation_premiere_derniere": -0.5294117647058824,
+      "pente_par_an": -0.5,
+      "pente_relative_par_an": -0.08,
+      "niveau": "alerte"
+    },
+    "Sar à museau pointu (Diplodus puntazzo)": {
+      "n_annees": 4,
+      "annees": [
+        2022,
+        2025
+      ],
+      "effectif_total": 32.0,
+      "variation_premiere_derniere": -0.5454545454545454,
+      "pente_par_an": -4.0,
+      "pente_relative_par_an": -0.5,
+      "niveau": "alerte"
+    },
+    "Saupe (Sarpa salpa)": {
+      "n_annees": 4,
+      "annees": [
+        2022,
+        2025
+      ],
+      "effectif_total": 663.0,
+      "variation_premiere_derniere": 0.6414342629482072,
+      "pente_par_an": 45.5,
+      "pente_relative_par_an": 0.27450980392156865,
+      "niveau": "stable"
+    },
+    "Sparaillon (Diplodus annularis)": {
+      "n_annees": 4,
+      "annees": [
+        2022,
+        2025
+      ],
+      "effectif_total": 53.0,
+      "variation_premiere_derniere": -0.037037037037037035,
+      "pente_par_an": -0.7,
+      "pente_relative_par_an": -0.05283018867924528,
+      "niveau": "stable"
+    }
+  },
+  "taxons_exclus": [
+    "Athérine (Atherina sp.)",
+    "Mulet indéterminé (Mugilidae sp.)",
+    "Poisson non identifié (Actinopterygii sp.)",
+    "Sparidé indéterminé (Sparidae sp.)",
+    "Symphodus sp."
+  ],
+  "seuils": {
+    "alerte": -0.3,
+    "vigilance": -0.1,
+    "min_annees": 3,
+    "min_effectif_total": 20
+  },
+  "avertissement": "Tendance descriptive sur peu d'années ; aucune conclusion causale (l'éclairage n'est pas désigné comme cause)."
+}
