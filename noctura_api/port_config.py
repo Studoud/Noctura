@@ -1,0 +1,4 @@
+PORT_NAME = "Port de Porquerolles"
+PORT_LATITUDE = 43.0024397
+PORT_LONGITUDE = 6.2006567
+PORT_TIMEZONE = "Europe/Paris"
