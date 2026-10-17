@@ -1,4 +1,4 @@
-"""Données météo, marines et astro en temps réel (sans clé API) — port de Toulon."""
+"""Données météo, marines et astro en temps réel (sans clé API) — Porquerolles."""
 
 from __future__ import annotations
 
@@ -16,12 +16,12 @@ from astral.moon import phase as moon_phase_days
 from astral.sun import azimuth as sun_azimuth
 from astral.sun import elevation as sun_elevation
 from astral.sun import sun
+from noctura_api.port_config import PORT_LATITUDE, PORT_LONGITUDE, PORT_NAME
 
-# Port de Toulon (France)
-LATITUDE = 43.12
-LONGITUDE = 5.93
+LATITUDE = PORT_LATITUDE
+LONGITUDE = PORT_LONGITUDE
 PORT = LocationInfo(
-    name="Toulon",
+    name=PORT_NAME,
     region="France",
     timezone="Europe/Paris",
     latitude=LATITUDE,
@@ -33,7 +33,7 @@ MARINE_URL = "https://marine-api.open-meteo.com/v1/marine"
 REQUEST_TIMEOUT_S = 8
 
 DEFAULT_METEO_ASTRO: dict[str, Any] = {
-    "port": "Toulon",
+    "port": "Porquerolles",
     "couverture_nuageuse": 50,
     "luminosite_lune": 50,
     "phase_lune": "Premier quartier",
@@ -400,7 +400,7 @@ def _lune_et_soleil(now: datetime) -> dict[str, Any]:
 
 
 def get_meteo_astro() -> dict[str, Any]:
-    """Retourne météo + mer + lune/soleil pour Toulon. Jamais d'exception vers l'appelant."""
+    """Retourne météo + mer + lune/soleil pour Porquerolles."""
     result = dict(DEFAULT_METEO_ASTRO)
     now = _now()
     result["port"] = PORT.name
